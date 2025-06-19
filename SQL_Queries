@@ -1,0 +1,59 @@
+📄 01_Basic_Queries.sql
+
+-- List all films
+SELECT * FROM film;
+
+-- List all customers
+SELECT * FROM customer;
+
+-- List all categories
+SELECT * FROM category;
+
+📄 02_Joins.sql
+
+-- Film titles with their category
+SELECT f.title, c.name AS category
+FROM film f
+JOIN film_category fc ON f.film_id = fc.film_id
+JOIN category c ON fc.category_id = c.category_id;
+
+-- Display the title of the movie, customer s first name, and last name who rented it.
+SELECT CONCAT(c.first_name, ' ', c.last_name) AS customer_name, f.title
+FROM rental r
+JOIN inventory i ON r.inventory_id = i.inventory_id
+JOIN film f ON i.film_id = f.film_id
+JOIN customer c ON r.customer_id = c.customer_id;
+
+📄 03_Aggregations.sql
+
+-- Top 5 most rented films
+SELECT f.title, COUNT(*) AS rental_count
+FROM rental r
+JOIN inventory i ON r.inventory_id = i.inventory_id
+JOIN film f ON i.film_id = f.film_id
+GROUP BY f.title
+ORDER BY rental_count DESC
+LIMIT 5;
+
+-- Total revenue by customer
+SELECT CONCAT(c.first_name, ' ', c.last_name) AS customer_name, SUM(p.amount) AS total_revenue
+FROM payment p
+JOIN customer c ON p.customer_id = c.customer_id
+GROUP BY customer_name
+ORDER BY total_revenue DESC;
+
+📄 04_Advanced_Queries.sql
+
+-- Customers who rented more than 10 times
+SELECT CONCAT(c.first_name, ' ', c.last_name) AS customer_name, COUNT(*) AS rental_count
+FROM rental r
+JOIN customer c ON r.customer_id = c.customer_id
+GROUP BY customer_name
+HAVING rental_count > 10;
+
+-- Monthly revenue trend
+SELECT DATE_FORMAT(payment_date, '%Y-%m') AS month, SUM(amount) AS revenue
+FROM payment
+GROUP BY month
+ORDER BY month;
+
