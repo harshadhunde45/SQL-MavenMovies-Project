@@ -1,0 +1,13 @@
+SQL-MavenMovies-Project/
+├── SQL Queries/
+│ ├── 01_Basic_Queries.sql
+│ ├── 02_Joins.sql
+│ ├── 03_Aggregations.sql
+│ └── 04_Advanced_Queries.sql
+├── Excel_Data/
+│ └── MavenMovies_Analysis.xlsx
+├── PowerBI_Dashboard/
+│ └── MavenMovies_Report.pbix
+├── Screenshots/
+│ └── dashboard_preview.png
+├── README.md
