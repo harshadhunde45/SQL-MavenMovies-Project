@@ -1,20 +1,67 @@
-# Mavenmovies Database Analysis
+# 🎬 MavenMovies Data Analysis Project (SQL | Excel | Power BI)
 
-A hands-on SQL project using the MavenMovies dataset. Includes queries on JOINS, aggregates, subqueries, and more. Dataset and ERD included.
-This repository contains my analysis on the Mavenmovies database, which includes various tables such as actor, film, customer, and more. The analysis was done using MySQL commands and concepts such as JOINS, group by, and subqueries, and includes basic to advanced level queries.
+## 🚀 Project Summary
+This project was developed as part of my Data Analyst Internship at PW Skills. It focuses on analyzing the MavenMovies dataset — a simulated movie rental database — using SQL for data extraction, Excel for data exploration, and Power BI for visualization and reporting.
 
-About the Database
-The Mavenmovies database was obtained from OdinSchool, where I am pursuing a Data Science course. The database includes various tables with sample data that can be used for practicing MySQL commands and concepts.
+The objective is to showcase my ability to work across the data analysis pipeline: from writing complex queries to building dashboards that support business decision-making.
 
-Repository Contents
-mavenmovies_database.sql: SQL file containing the Mavenmovies database schema and sample data
-mavenmovies_queries.sql: SQL file containing a series of queries used to explore and extract insights from the Mavenmovies database
-README.md: This file
-Getting Started
-To get started with this project, simply download or clone the repository to your local machine. You can then import the mavenmovies_database.sql file into a MySQL server to create the Mavenmovies database. After importing the database, you can use the mavenmovies_queries.sql file to practice SQL commands and concepts.
+---
 
-Usage
-The mavenmovies_queries.sql file contains a series of queries that explore and extract insights from the Mavenmovies database. The queries cover a range of topics and difficulty levels, and are intended to be used as a learning resource for practicing MySQL commands and concepts. To use the queries, simply import the file into a MySQL server and run the queries.
+## 🧰 Tools & Technologies Used
+- 💻 SQL (MySQL Workbench) – for data extraction and transformation  
+- 📊 Microsoft Excel – for data cleaning, summarization, and pivot analysis  
+- 📈 Power BI – for building interactive dashboards and visual storytelling  
+- 🌐 GitHub – for project version control and public showcasing  
 
-Conclusion
-Overall, this project was a great opportunity for me to practice my skills in SQL and data analysis. I hope that this repository will be useful to others who are learning SQL or looking for a database to practice on. Please feel free to leave any feedback or suggestions for improvement.
+---
+
+## 🗃️ About the Dataset
+The MavenMovies database is a well-structured, relational dataset that simulates a DVD rental store. Key tables include:
+
+- `film`, `actor`, `film_actor` – movie and cast data  
+- `category`, `film_category` – genre classification  
+- `customer`, `address`, `city` – customer demographics  
+- `rental`, `payment`, `inventory` – transaction and sales data  
+- `store`, `staff` – store and employee data  
+
+---
+
+## 🎯 Project Objectives
+- Extract relevant insights using SQL queries  
+- Summarize and analyze key metrics in Excel  
+- Visualize trends and KPIs with Power BI dashboards  
+- Solve real business questions like revenue trends, top customers, and popular categories  
+
+---
+## 📌 Key Concepts Practiced
+### SQL
+- SELECT, WHERE, ORDER BY  
+- JOINS (INNER, LEFT, RIGHT)  
+- GROUP BY & HAVING  
+- Subqueries  
+- Aggregate & Date functions  
+
+### Excel
+- Pivot Tables & Charts  
+- Filtering & Conditional Formatting  
+- Lookup formulas (VLOOKUP, XLOOKUP)  
+- Data cleaning  
+
+### Power BI
+- Data Modeling  
+- DAX functions  
+- KPI Cards, Bar Charts, Line Graphs, Slicers  
+- Dynamic filters and report design  
+
+---
+
+## 🧠 Business Questions Answered
+- Which are the most rented movies and by whom?  
+- Which category generates the highest revenue?  
+- Determine the customers who have rented movies from both stores (store ID 1 and store ID 2)?  
+- Display the top 5 rented movies along with the number of times they've been rented.?  
+- Find the average rental rate of movies in each language?  
+
+---
+
+
